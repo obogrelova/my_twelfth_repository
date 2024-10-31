@@ -59,7 +59,7 @@ class Game:
                     break
                 turn = "computer"
             else:
-                self.player.attack(self.player)
+                self.computer.attack(self.player)
                 if not self.player.is_alive():
                     print(f"{self.player.name} повержен! {self.computer.name} выиграл!")
                     break
